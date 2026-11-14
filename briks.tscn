@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cv3iyqf2p8fqh"]
+
+[ext_resource type="Script" uid="uid://2aenufxw4o6t" path="res://briks.gd" id="1_cbi0p"]
+[ext_resource type="Texture2D" uid="uid://ba4674feq76vk" path="res://images (1)-Photoroom (1).png" id="1_syqcr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7yiv"]
+size = Vector2(73, 37)
+
+[node name="Briks" type="Area2D" unique_id=954768199]
+position = Vector2(0, 1)
+script = ExtResource("1_cbi0p")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=294926501]
+position = Vector2(37.5, 17.5)
+shape = SubResource("RectangleShape2D_i7yiv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1987300965]
+position = Vector2(36.062504, 15.5)
+scale = Vector2(0.16326044, 0.15320335)
+texture = ExtResource("1_syqcr")
